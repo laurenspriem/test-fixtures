@@ -1,23 +1,29 @@
-# ML Indexing Fixtures
+# ML Indexing Fixtures (v1)
 
-Fixtures for ML image indexing tests.
+Fixtures for ML image indexing coverage tests.
 
 ## Contents
 
-- `files/jpeg_standard.jpg`: Baseline JPEG with normal EXIF metadata.
-- `files/png_alpha.png`: PNG with an alpha channel.
-- `files/webp_lossy.webp`: Lossy WebP image.
-- `files/heic_phone.heic`: HEIC image from a mobile device.
-- `files/gif_animated.gif`: Animated GIF (first-frame extraction coverage).
-- `files/tiff_cmyk.tiff`: TIFF with CMYK color space.
-- `files/avif_hdr.avif`: AVIF image with modern codec metadata.
-- `files/rotated_exif.jpg`: JPEG with non-default EXIF orientation.
-- `files/no_exif.jpg`: JPEG without EXIF metadata.
-- `files/very_large.jpg`: High-resolution image for memory/perf coverage.
-- `files/very_small.png`: Tiny image for small-dimension edge cases.
-- `files/panorama.jpg`: Image with an extreme aspect ratio.
-- `files/space in name.jpg`: Filename with spaces.
-- `files/unicode_name.jpg`: Filename normalization coverage.
-- `files/truncated.jpg`: Intentionally corrupted/truncated image.
-- `manifest.json`: Optional canonical metadata and expected indexing behavior.
+- `files/1343_rotate_90_cw.jpg`: JPEG with a rotate-90 orientation case (issue on dart.ui)
+- `files/1718_rotate_90_cw.HEIC`: HEIC with a rotate-90 orientation case.
+- `files/7765_horizontal_normal.HEIC`: HEIC with a normal orientation case.
+- `files/7949_mirror_horizontal_rotate_270_cw.HEIC`: HEIC mirrored and rotated
+  270 degrees clockwise.
+- `files/IMG_0682_pano.HEIC`: HEIC panorama image.
+- `files/IMG_8606_rotate_90_cw_contains_text.HEIC`: HEIC rotate-90 image with
+  visible text.
+- `files/IMG_8905.CR2`: Canon RAW (CR2) image.
+- `files/IMG_pano.jpg`: JPEG panorama image.
+- `files/astronaut.png`: PNG image.
+- `files/man.jpeg`: Small JPEG portrait image.
+- `files/people.jpeg`: Small JPEG image with multiple people.
+- `files/singapore.jpg`: JPEG cityscape image.
+- `files/starwatchers.jpg`: JPEG low-light/night scene.
+- `files/ui_app.webp`: WEBP UI screenshot-style image.
+- `manifest.json`: Canonical metadata (hashes, sizes, MIME types) and coverage
+  tags for fixture validation.
 
+## Provenance
+
+Curated locally for indexing pipeline coverage across formats, orientation
+variants, panoramas, text-containing images, low-light scenes, and RAW input.
