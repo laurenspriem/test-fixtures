@@ -116,6 +116,28 @@
       "coverage_tags": [
         "heic",
         "orientation",
+        "horizontal_normal"
+      ],
+      "expected": {
+        "exif": {
+          "image_height": 4096,
+          "image_width": 1856,
+          "orientation": "Horizontal (normal)"
+        },
+        "indexing": {
+          "contains_text": false,
+          "faces_present": false
+        }
+      },
+      "mime_type": "image/heic",
+      "path": "files/IMG_5014_horizontal_normal.heic",
+      "sha256": "5b963600d44a656a1e816ec4eedb048665b0cb7ba9b0784cba4e91dc18fd41ec",
+      "size": 1979147
+    },
+    {
+      "coverage_tags": [
+        "heic",
+        "orientation",
         "rotate_90_cw",
         "contains_text"
       ],
@@ -178,6 +200,28 @@
       "path": "files/IMG_pano.jpg",
       "sha256": "1d17c9e5983a8784b6a805885b735705b8644190b592a66505e62536783c7b47",
       "size": 6222699
+    },
+    {
+      "coverage_tags": [
+        "jpeg",
+        "orientation",
+        "horizontal_normal"
+      ],
+      "expected": {
+        "exif": {
+          "image_height": 4032,
+          "image_width": 3024,
+          "orientation": "Horizontal (normal)"
+        },
+        "indexing": {
+          "contains_text": false,
+          "faces_present": false
+        }
+      },
+      "mime_type": "image/jpeg",
+      "path": "files/PXL_8748_horizontal_normal.jpg",
+      "sha256": "edb9284e5650334e892630111909f61c04c2e32fc1bb47ed8b11d2b4eb7ab665",
+      "size": 2482328
     },
     {
       "coverage_tags": [

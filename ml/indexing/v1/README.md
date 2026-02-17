@@ -10,10 +10,12 @@ Fixtures for ML image indexing coverage tests.
 - `files/7949_mirror_horizontal_rotate_270_cw.HEIC`: HEIC mirrored and rotated
   270 degrees clockwise.
 - `files/IMG_0682_pano.HEIC`: HEIC panorama image.
+- `files/IMG_5014_horizontal_normal.heic`: HEIC with normal orientation metadata.
 - `files/IMG_8606_rotate_90_cw_contains_text.HEIC`: HEIC rotate-90 image with
   visible text.
 - `files/IMG_8905.CR2`: Canon RAW (CR2) image.
 - `files/IMG_pano.jpg`: JPEG panorama image.
+- `files/PXL_8748_horizontal_normal.jpg`: JPEG with normal orientation metadata.
 - `files/astronaut.png`: PNG image.
 - `files/man.jpeg`: Small JPEG portrait image.
 - `files/people.jpeg`: Small JPEG image with multiple people.
